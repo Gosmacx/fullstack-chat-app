@@ -14,8 +14,8 @@ const typing = ref(false)
 
 watchEffect((onInavlidate) => {
     if (messageText.value) {
-        typing.value = true // User Typing
-        const delay = setTimeout(() => typing.value = false, 1000); // User not typing
+        typing.value = true // User Typing.
+        const delay = setTimeout(() => typing.value = false, 1000); // User not typing.
         onInavlidate(() => clearTimeout(delay));
     } else {
         typing.value = false
@@ -23,6 +23,7 @@ watchEffect((onInavlidate) => {
 })
 
 watch(typing, (newVal, oldVal) => {
+        // Emit current status.
         socket.emit('typing', {
             id: store.state.id,
             username: store.state.username,
