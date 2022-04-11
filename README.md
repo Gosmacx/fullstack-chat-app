@@ -2,7 +2,7 @@
 
 🥳 A **real-time** full-stack chat app.
 
-`Vue 3 Composition API` + `Express` + `Socket.io`
+`Vue 3 Composition API` + `Tailwind` + `Express` + `Socket.io`
 
 ## Typing Module
 
