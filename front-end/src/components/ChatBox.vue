@@ -35,7 +35,7 @@ watchEffect((onInavlidate) => {
 
     if (messageText.value) {
         typing.value = true
-        const delay = setTimeout(() => typing.value = false, 4000);
+        const delay = setTimeout(() => typing.value = false, 1000);
         onInavlidate(() => clearTimeout(delay));
     } else {
         typing.value = false
@@ -45,19 +45,11 @@ watchEffect((onInavlidate) => {
 })
 
 watch(typing, (newVal, oldVal) => {
-    if (newVal) {
         socket.emit('typing', {
             id: store.state.id,
             username: store.state.username,
-            typing: true
+            typing: newVal
         })
-    } else {
-        socket.emit('typing', {
-            id: store.state.id,
-            username: store.state.username,
-            typing: false
-        })
-    }
 })
 
 socket.on("typingUser", data => {
