@@ -15,7 +15,7 @@
                     <span v-if="typingUsers.length > 0 " > Yazıyor... </span>
                 </div>
                 <input v-model="messageText" maxlength="250" @keyup.enter="sendMessage" class="w-[600px] bg-black px-2 h-full bg-transparent outline-none" placeholder="Bir mesaj fırlat!" type="text">
-                <button @click="sendMessage" class="p-3 mx-auto text-sm bg-blue-600 rounded-xl" >Gönder</button>
+                <button @click="sendMessage" class="p-2 mx-auto text-sm bg-blue-600 rounded-xl" >Gönder</button>
              </div>
              
         </div>
