@@ -6,8 +6,6 @@
 
 ## Typing Module
 
-![Screen Shot 3](https://gcdnb.pbrd.co/images/V9FVaoWIh6E3.png?o=1)
-
 ```js
 const messageText = ref(null)
 const typing = ref(false)
@@ -37,12 +35,14 @@ watch(typing, (newVal, oldVal) => {
 
 ### `Login Screen`
 
-![Screenshot 1](https://gcdnb.pbrd.co/images/bMdxR30uaN8Q.png?o=1)
+![Screenshot 1](https://raw.githubusercontent.com/Gosmacx/fullstack-chat-app/main/screenshots/ss.png)
 
 ### `Chat Screen`
 
-![Screenshot 2](https://gcdnb.pbrd.co/images/RQLLDmtIk169.png?o=1)
+![Screenshot 2](https://raw.githubusercontent.com/Gosmacx/fullstack-chat-app/main/screenshots/ss2.png)
 
-### `Responsive Design`
+### `Responsive Design` & `Multiple Typing.`
 
-![Screenshot 3](https://gcdnb.pbrd.co/images/kQKCl7H6aREo.png?o=1)
+![Screenshot 3](https://raw.githubusercontent.com/Gosmacx/fullstack-chat-app/main/screenshots/typing.png)
+
+
